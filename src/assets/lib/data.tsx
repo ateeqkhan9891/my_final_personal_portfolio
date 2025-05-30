@@ -98,8 +98,8 @@ export const projectsData = [
       { name: "ML", icon: ml },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "https://github.com/ateeqkhan9891/karamat",
+    githuburl: "https://github.com/ateeqkhan9891/karamat",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -130,9 +130,9 @@ export const projectsData = [
       { name: "ML", icon: ml },
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "https://github.com/ateeqkhan9891/karamat",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/ateeqkhan9891/karamat",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
