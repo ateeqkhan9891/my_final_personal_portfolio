@@ -1,6 +1,6 @@
 
 
-import figmaicon from "../../assets/icons/figmaicon.png";
+// import figmaicon from "../../assets/icons/figmaicon.png";
 import python from "../../assets/icons/python.svg";
 import r from "../../assets/icons/r.svg";
 import html from "../../assets/icons/html.svg";
@@ -23,7 +23,7 @@ import scikitlearn from "../../assets/icons/scikitlearn.svg";
 import panda from "../../assets/icons/panda.svg";
 import numpy from "../../assets/icons/numpy.svg";
 // import trelloicon from "../../assets/icons/trelloicon.svg"; 
-import apiicon from "../../assets/icons/apiicon.svg";
+// import apiicon from "../../assets/icons/apiicon.svg";
 // import axiosicon from "../../assets/icons/axiosicon.svg";
 // import spotifyicon from "../../assets/icons/spotifyicon.svg";
 // import netlifyicon from "../../assets/icons/netlifyicon.svg";
