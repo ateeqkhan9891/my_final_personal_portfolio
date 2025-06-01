@@ -43,18 +43,18 @@ const TechStack: React.FC = () => {
               opacity: opacityProgess,
             }}
           >
-            {/* Removed the angled brackets here */}
+           
             <p className="font-black mb-6">
               Skills
             </p>
             <h2>My TechStack and Skills</h2>
           </motion.div>
         </div>
-        <div className="flex gap-40 justify-center max-lg:flex-col">
-          <div className="w-1/3 max-lg:w-full">
+        <div className="flex gap-40 justify-center max-lg:flex-col sm:w-auto max-lg:gap-20 max-lg:items-center">
+          <div className="w-[40%] max-lg:w-full">
             <SkillSection skillsData={skillsDataWeb} theme={theme} />
           </div>
-          <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
+          <div className="  flex flex-col h-auto  justify-around max-lg:gap-40   ">
             <SkillSection skillsData={skillsDataDesign} theme={theme} />
             <SkillSection skillsData={skillsDataCMS} theme={theme} />
           </div>

@@ -55,10 +55,10 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt="Profile"
-        className="w-40 sm:w-52 md:w-60 drop-shadow-2xl rounded-full shadow-2xl avatar-img mt-10"
+        className="w-40 sm:w-52 md:w-60 drop-shadow-2xl rounded-full shadow-2xl avatar-img mt-40 "
       />
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center ">
         {headerIntroData.title.en}
         <span className="wave text-5xl sm:text-6xl md:text-7xl inline-block ml-2">
           &#128075;&#127997;
@@ -75,7 +75,7 @@ const HeaderIntro: React.FC = () => {
 
 
 
-      <div className="button-container flex items-center justify-center  flex-wrap gap-4 mt-10  p-4">
+      <div className="button-container flex items-center justify-center  flex-wrap gap-4 mt-15   p-4">
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}

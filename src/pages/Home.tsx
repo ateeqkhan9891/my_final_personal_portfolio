@@ -15,6 +15,7 @@ const LazyAboutMe = lazy(() => import("../components/AboutMe"));
 const LazyContact = lazy(() => import("../components/Contact"));
 const LazyHeaderIntro = lazy(() => import("../components/HeaderIntro"));
 const LazyRadialGradient = lazy(() => import("../components/RadialGradient"));
+// import awards from "../components/awards";
 
 const Home: React.FC = () => {
   const { theme } = useTheme();

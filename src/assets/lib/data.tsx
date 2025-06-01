@@ -110,7 +110,7 @@ export const projectsData = [
     },
   },
   {
-    title: "SalesPulse – Predictive Sales Analytics Dashboard",
+    title: "Project 2 ",
     // description:
       // "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
     description_EN:
@@ -143,7 +143,7 @@ export const projectsData = [
     },
   },
   {
-    title: "SkillHub – Full-Stack Developer Platform",
+    title: "project 1",
     // description:
       // "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
     description_EN:
@@ -265,16 +265,19 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Data Visualization ",
+    skillsTitle: " Visualization ",
     skills: [
-      { title: "Power BI", hash: "#Figma", icon: powerbi, color: "#F24E1E" },
+      { title: "Power BI", hash: "#powerBi", icon: powerbi, color: "#F24E1E" },
+      { title: "Power BI", hash: "#powerBi", icon: powerbi, color: "#F24E1E" },
       {
         title: "Tableau ",
-        hash: "#Adobe XD",
+        hash: "#Tableau",
         icon: tableauicon,
         color: "#FF61F6",
       },
-      { title: "Excel  ", hash: "#Canva", icon: excelicon, color: "#00C4CC" },
+      { title: "Excel  ", hash: "#Excel", icon: excelicon, color: "#00C4CC" },
+      { title: "Excel  ", hash: "#Excel", icon: excelicon, color: "#00C4CC" },
+      { title: "Excel  ", hash: "#Excel", icon: excelicon, color: "#00C4CC" },
     ],
   },
 ] as const;
@@ -354,9 +357,9 @@ export const quotesData = [
 ] as const;
 
 export const aboutMeData = {
-  // title: "Über mich",
+  
   title_EN: "About me",
-  // description: "Ein paar Codeschnippsel über mich",
+  
   description_EN: "A few code snippets about me",
   
   paragraphs_EN: [

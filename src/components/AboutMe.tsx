@@ -27,7 +27,7 @@ const AboutMe: React.FC = () => {
     }
   };
 
-  // Use only English paragraphs now
+  
   const paragraphs = aboutMeData.paragraphs_EN;
 
   return (

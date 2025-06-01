@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
 
+
 function App() {
   return (
     <>
