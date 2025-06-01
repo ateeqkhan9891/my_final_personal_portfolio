@@ -13,51 +13,29 @@ import "react-toastify/dist/ReactToastify.css";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
+// import type { IconType } from "react-icons";
 
-// Define interfaces for type safety
-interface Technology {
-  icon: string;
-  name: string;
-}
+// ✅ Get correct Project type from data directly
+type Project = (typeof projectsData)[number];
 
-interface Project {
-  title: string;
-  description_EN: string;
-  image: string;
-  deploymenturl: string;
-  deploymenticon: string;
-  githuburl: string;
-  githubicon: string;
-  colors: {
-    main: string;
-    icon: string;
-  };
-  technologies: Technology[];
-}
-
-interface ProjectSliderProps {}
-
-// Main component
-const ProjectSlider: React.FC<ProjectSliderProps> = () => {
+const ProjectSlider: React.FC = () => {
   const { ref: sectionRef } = useSectionInView("Projects");
   const animationRef = useRef<HTMLDivElement>(null);
 
-  // Scroll-based animations
   const { scrollYProgress } = useScroll({
     target: animationRef,
     offset: ["1 1", "1.3 1"],
   });
+
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  // Toast notification for server request
   const notifyServerRequest = () => {
     toast.info(toastMessages.loadingProject.en, {
-      toastId: "server-request", // Prevent duplicate toasts
+      toastId: "server-request",
     });
   };
 
-  // Common Swiper configuration
   const swiperConfig = {
     effect: "cards" as const,
     grabCursor: true,
@@ -138,19 +116,17 @@ const ProjectSlider: React.FC<ProjectSliderProps> = () => {
                     <div className="technologies">
                       <h3>Technologies</h3>
                       <div className="grid grid-cols-6 gap-10 p-4">
-                        {project.technologies.map(
-                          (technology: Technology, innerIndex: number) => (
-                            <img
-                              key={`tech-${index}-${innerIndex}`}
-                              src={technology.icon}
-                              alt={`${technology.name} icon`}
-                              className="h-[5rem] w-[60%]"
-                              data-tooltip-id="my-tooltip"
-                              data-tooltip-content={technology.name}
-                              loading="lazy"
-                            />
-                          )
-                        )}
+                        {project.technologies.map((technology, innerIndex) => (
+                          <img
+                            key={`tech-${index}-${innerIndex}`}
+                            src={technology.icon}
+                            alt={`${technology.name} icon`}
+                            className="h-[5rem] w-[60%]"
+                            data-tooltip-id="my-tooltip"
+                            data-tooltip-content={technology.name}
+                            loading="lazy"
+                          />
+                        ))}
                       </div>
                     </div>
                     <div className="buttons flex gap-10">
@@ -218,23 +194,23 @@ const ProjectSlider: React.FC<ProjectSliderProps> = () => {
                     aria-label={`View Github repository for ${project.title}`}
                   />
                 </div>
-                <p className="text-[--white] max-lg:text-4xl">{project.description_EN}</p>
+                <p className="text-[--white] max-lg:text-4xl">
+                  {project.description_EN}
+                </p>
                 <div className="technologies">
                   <h3 className="text-[--white]">Technologies</h3>
                   <div className="grid grid-cols-3 gap-10 p-4">
-                    {project.technologies.map(
-                      (technology: Technology, innerIndex: number) => (
-                        <img
-                          key={`tech-mobile-${index}-${innerIndex}`}
-                          src={technology.icon}
-                          alt={`${technology.name} icon`}
-                          className="h-[5rem] w-[60%]"
-                          data-tooltip-id="my-tooltip"
-                          data-tooltip-content={technology.name}
-                          loading="lazy"
-                        />
-                      )
-                    )}
+                    {project.technologies.map((technology, innerIndex) => (
+                      <img
+                        key={`tech-mobile-${index}-${innerIndex}`}
+                        src={technology.icon}
+                        alt={`${technology.name} icon`}
+                        className="h-[5rem] w-[60%]"
+                        data-tooltip-id="my-tooltip"
+                        data-tooltip-content={technology.name}
+                        loading="lazy"
+                      />
+                    ))}
                   </div>
                 </div>
               </article>
